@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Durga's Full Stack Development ePortfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e3f2fd);
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(to right, #007bff, #00c6ff);
+      color: white;
+      text-align: center;
+      padding: 3rem;
+      border-radius: 0 0 30px 30px;
+      margin-bottom: 30px;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid white;
+      margin-bottom: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    }
+    section {
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+      max-width: 1000px;
+    }
+    section:nth-child(even) {
+      background: linear-gradient(135deg, #fff, #e0f7fa);
+    }
+    h2 { color: #007bff; margin-bottom: 15px; }
+    h4 { margin-top: 20px; }
+    pre {
+      background: #212529;
+      color: #f8f9fa;
+      padding: 15px;
+      border-radius: 10px;
+      overflow-x: auto;
+    }
+    code { background:#f1f1f1; padding:2px 6px; border-radius:4px; }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: linear-gradient(to right, #00c6ff, #007bff);
+      color: white;
+      border-radius: 20px 20px 0 0;
+      margin-top: 50px;
+    }
+    nav { background: linear-gradient(to right, #6a11cb, #2575fc); }
+    nav a { color: white !important; font-weight: 500; }
+    nav a:hover { text-decoration: underline; }
+    ul li { margin-bottom: 6px; }
+    .code-output { background:#f8f9fa; padding:12px; border-radius:8px; margin-top:10px; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">🌐 Durga's ePortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fullstack">Full Stack</a></li>
+          <li class="nav-item"><a class="nav-link" href="#html">HTML</a></li>
+          <li class="nav-item"><a class="nav-link" href="#css">CSS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bootstrap">Bootstrap</a></li>
+          <li class="nav-item"><a class="nav-link" href="#javascript">JavaScript</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header id="profile">
+    <img src="Image/my photo.JPG" Alt="My Profile Picture">
+    <h1>Durga Poudel</h1>
+    <p>💻 Aspiring Full Stack Developer | Passion for Web Design & Coding</p>
+  </header>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! My name is <strong>Durga</strong>. I am passionate about web development and coding. I enjoy learning new technologies, creating websites, and building interactive applications. My goal is to become a skilled <strong>Full Stack Developer</strong> and contribute to innovative projects.</p>
+  </section>
+
+  <!-- Section 1: Full Stack -->
+  <section id="fullstack">
+    <h2>Full Stack Development</h2>
+
+    <p>Full Stack Development means working on both the visible part of a website (front-end) and the invisible part that makes a website run (back-end). The front-end (or client side) is the part of the website users can see (like buttons, images, menus, forms). It is made with HTML for structure, CSS for style, and JavaScript for interaction, to make web page more interactive and convenient to use.</p>
+
+    <p>Server-side or behind-the-scenes side back-end is about the side of the server that you don’t see, but that you need to in order for the site to work. It stores data, verifies logins, processes requests and talks to databases. This part is typically programmed with Python, Java, PHP or Node. js and uses databases such as MySQL and MongoDB in which information is saved. The front-end and back-end communicate with one another through a series of APIs (application programming interfaces), which are sort of like messengers (you might have heard of the messenger service WhatsApp, for example).</p>
+
+    <p>Full Stack Development is worth it, because you get to experience Both sides of development. A Full Stack Developer can build a complete application from end-to-end, and therefore is very flexible and talented. They can control what the users see, but also build the systems behind the app or site. Today’s tech industry values building fast and easy, so developers tend to be highly prized.</p>
+
+    <h4>Explanation code example:</h4>
+    <pre>
+<!-- Frontend: index.html (simple skeleton) -->
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;title&gt;My App&lt;/title&gt;&lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;My App&lt;/h1&gt;
+    &lt;!-- link to css and js --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+<!-- Backend: server.js (Node.js + Express) -->
+// const express = require('express');
+// const app = express();
+// app.get('/', (req,res) =&gt; res.send('Hello from server'));
+// app.listen(3000);
+    </pre>
+
+    <h4>How it works:</h4>
+    <ul>
+      <li>• <strong>Section & Heading</strong> – &lt;section&gt; creates a block for Full Stack Development. &lt;h2&gt; with an icon shows the title clearly.</li>
+      <li>• <strong>Paragraph</strong> – &lt;p&gt; explains that Full Stack Developers handle both front-end (what users see) and back-end (server/database work).</li>
+      <li>• <strong>Front - End</strong> – HTML, CSS, JavaScript (User Interface).</li>
+      <li>• <strong>Back - End</strong> – Databases, Servers, APIs.</li>
+      <li>• <strong>Full Stack Developer</strong> – Can work on both front and back.</li>
+    </ul>
+
+    <h4>Demonstration of Full Stack Development:</h4>
+    <p>Full Stack Development demonstrates for creating a complete web application by taking care of the frontend, backend, and database. The frontend creates what the users see and interact with using HTML, CSS, and JavaScript. The backend processes request and runs the server and also creates APIs. All these levels combined allow a Full Stack Developer to create a complete, interactive application.</p>
+  </section>
+
+  <!-- Section 2: HTML -->
+  <section id="html">
+    <h2>HTML (Hyper Text Markup Language)</h2>
+
+    <p>HTML is the language used to author web pages, organizing the link, text, and graphics in a format that enables users to navigate the site and be able to see them properly in browsers.  It is the backbone or skeleton of all websites, giving the browser the directions on what to show and in what order. HTML developers' addition of headings, paragraphs, images, hyperlinks, tables, and forms enables users to read, navigate, and interact with websites.  HTML is capable of formatting text in an organized manner only; it does not, however, carry out calculations or reasoning like computer languages.</p>
+
+    <p>Every HTML file uses are different tags or elements to create necessary segments of a website. For example, &lt;p&gt; tags are specifically used for paragraphs and &lt;h1&gt; tags for headings. They come with a pair of opening and closing tags separated by the intended content. Attributes are also used in HTML (e.g., an src attribute for images or href attribute for links) with the sole purpose of offering supplemental data to the web browser. A &lt;!DOCTYPE html&gt; for basic HTML pages is usually proceeded with an &lt;html&gt; tag, which has an opening element for including the &lt;head&gt; part for the page title and another &lt;body&gt; to host the actual site code.</p>
+
+    <p>We can’t talk about web development without mentioning HTML, as it is the very basis of every web project. In the earlier days, the web was referred to as a “web of links” because all you had to do was place a few words of hyper linkable text and link it to another webpage that contains the content. HTML isn’t the only technology involved, as JavaScript enables the interactivity and CSS takes care of the design to integrate the multimedia that comes with it. However, structured content is not possible on the internet without HTML.</p>
+
+    <h4>Explanation code example:</h4>
+    <pre>
+&lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+&lt;p&gt;This is my first paragraph in HTML.&lt;/p&gt;
+    </pre>
+
+    <h4>How it works:</h4>
+    <ul>
+      <li>• <strong>&lt;h1&gt; Tag – Heading</strong><br>
+          &lt;h1&gt; tag is used to create the main heading of a webpage.<br>
+          HTML has 6 levels of headings: &lt;h1&gt; is the biggest and most important, while &lt;h6&gt; is the smallest.<br>
+          Headings are important not just for looks but also for search engines like Google. They help search engines understand what your page is about.
+      </li>
+      <li style="margin-top:8px;">• <strong>&lt;p&gt; Tag- Paragraph</strong><br>
+          &lt;p&gt; tag is used to write a paragraph of text.<br>
+          It automatically adds some spacing above and below, so the text looks neat.<br>
+          This tells the browser to display that sentence as normal text under the heading.
+      </li>
+    </ul>
+
+    <p>Below the code example, live output is displayed using the same tags so viewers can see how HTML looks when rendered in a browser.</p>
+
+    <h4>Demonstration of HTML:</h4>
+    <p>This example clearly shows that HTML is not about style or interactivity but it focuses purely on content and structure. Without HTML, a web page would have no text, headings, paragraphs, or any meaningful layout. It acts like the foundation of a house: simple, yet absolutely essential.</p>
+
+    <div class="code-output">
+      <h1>Welcome to My Website</h1>
+      <p>This is my first paragraph in HTML.</p>
+    </div>
+  </section>
+
+  <!-- Section 3: CSS -->
+  <section id="css">
+    <h2>CSS</h2>
+
+    <p>CSS (Cascading Style Sheets) is a language that adds style and beauty to web pages. While HTML is used to create the structure of a page, CSS is used to decide how that page looks—such as the colors, fonts, sizes, spacing, and overall design. Without CSS, websites would just look plain with black text on a white background, but with CSS, they can be made attractive, modern, and user-friendly.</p>
+
+    <p>One of the best things about CSS is that it encourages you to separate content from design. This means that, HTML is only used to store and display the content such as text, images, links, etc., whereas CSS describes, the way these contents are going to look to the user. CSS has three different methods that can be used to create them; inline, internal and external. From these three, external CSS style is the most used professional websites because according to myself it helped me clean code, reusable, and can edit easy file.</p>
+
+    <p>CSS is “cascading,” which means styles are applied according to a predetermined order in case of conflict. Science &gt; For instance, inline-styled will over-ride inside or outside styled and itemized rules, e.g., an ID rule will over-ride a tag rule. CSS also provides advanced features like layout control (flexbox or grid), responsive design (so a site works on both mobiles and desktops), and even animations. CSS is why the skeleton of the web page becomes something that is visually attractive and interactive.</p>
+
+    <h4>Explanation code example:</h4>
+    <pre>
+h1 {
+  color: blue;
+  text-align: center;
+}
+p {
+  font-size: 18px;
+}
+    </pre>
+
+    <h4>How it works:</h4>
+    <h5>Targeting HTML Elements:</h5>
+    <ul>
+      <li>• In CSS, we use selectors (like <code>h1</code> and <code>p</code>) to choose which HTML elements you want to style.</li>
+      <li>• Here, you styled all &lt;h1&gt; headings and all &lt;p&gt; paragraphs.</li>
+    </ul>
+
+    <h5>Styling the Heading (h1):</h5>
+    <ul>
+      <li>• <code>color: blue</code> =&gt; Changes the text color to a bright blue.</li>
+      <li>• <code>text-align: center</code> =&gt; Centers the heading horizontally across the page.</li>
+      <li>• Without this, the heading would appear on the left side by default.</li>
+    </ul>
+
+    <h5>Styling the Paragraph (p):</h5>
+    <ul>
+      <li>• <code>font-size: 18px;</code> =&gt; Makes the paragraph text slightly larger than the default size (usually around 16px). This improves readability.</li>
+    </ul>
+
+    <h4>What it demonstrates:</h4>
+    <p>It demonstrates that CSS (Cascading Style Sheets) is all about creating good looking web pages. HTML only gives structure, and CSS gives styles like colors and fonts, and also layout to your page to make it beautiful. It enhances readability by tweaking things such as fonts, sizes, and spacing to make the content more readable and enjoyable to read. CSS also offers fine tuning, it allows you to style separate elements, like headings, paragraphs, or sections. It’s main purpose is to separate structure (HTML) from design (CSS), this makes websites cleaner, organized and easier to manage.</p>
+
+    <div class="code-output">
+      <h1 style="color:blue; text-align:center;">This is a Heading</h1>
+      <p style="font-size:18px;">This is a styled paragraph.</p>
+    </div>
+  </section>
+
+  <!-- Section 4: Bootstrap -->
+  <section id="bootstrap">
+    <h2>Bootstrap</h2>
+
+    <p>Bootstrap is a popular tool to get your websites looking good, and fitting well on phones, tablets and laptops. Bootstrap provides you with premeditated style and bits of small code so that you don’t have to start everything from scratch and build all again. For example, you are styling Buttons, Text or layout easily just using Bootstrap classes. This makes websites easier and faster to generate.</p>
+
+    <p>The grid system is one of the main components of Bootstrap. That way you can split your web page into rows and columns, and make your site automatically adjust between screen sizes. Bootstrap also comes with many components out of the box such as menus, forms, modal popups, alerts, and image carousels. You can take models "as is", with almost no changes just integrate them in to your site.</p>
+
+    <p>It’s significant because it’s responsible to make sites look nice and act nicely in every device and because they are built fast. Some developers prefer using it because it is easy to learn, it supports all modern browsers, and it gives the professional look of a website without too much effort. In other words, Bootstrap is a toolbox that provides you with pieces already built so you can build nice sites quickly and easily.</p>
+
+    <h4>Explanation Code Example:</h4>
+    <pre>
+&lt;button class="btn btn-primary"&gt;Click Me&lt;/button&gt;
+    </pre>
+
+    <h4>How it works:</h4>
+    <ol>
+      <li><strong>Bootstrap Link</strong>
+        <ul>
+          <li>• First, I include Bootstrap in my page with a CDN link inside &lt;head&gt;.</li>
+          <li>• This gives my page access to Bootstrap’s ready-made styles.</li>
+        </ul>
+      </li>
+      <li><strong>Using Bootstrap Classes</strong>
+        <ul>
+          <li>• Instead of writing your own CSS, you simply add special class names to HTML elements.</li>
+          <li>• Example: &lt;button class="btn btn-primary"&gt;Click Me&lt;/button&gt;</li>
+          <li>o btn =&gt; makes it look like a Bootstrap button.</li>
+          <li>o btn-primary =&gt; makes it a blue button with padding, rounded corners, and hover effects.</li>
+        </ul>
+      </li>
+      <li><strong>Code vs. Output</strong>
+        <ul>
+          <li>• The &lt;pre&gt; block shows the raw code as text.</li>
+          <li>• The &lt;button&gt; tag underneath shows the real, styled button on the webpage.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h4>Demonstration of Bootstrap:</h4>
+    <p>This is a great example of how the web becomes easier to design and build after pre-styles libraries. In the code box, it shows the button as plain text, so learners can see what the code looks like. Underneath it, we have a button element that has the classes of btn and btn-primary, which is being rendered on the page. The btn class applies the default button styling to the element in Bootstrap, and btn-primary sets the default blue flavor. What this illustrates is that you can convert just any old-fashioned Web browser button into neat and modern and clean styled button by simply dropping in Bootstrap classes with no custom CSS required at all!</p>
+
+    <div class="code-output">
+      <pre>&lt;button class="btn btn-primary"&gt;Click Me&lt;/button&gt;</pre>
+      <button class="btn btn-primary">Click Me</button>
+    </div>
+  </section>
+
+  <!-- Section 5: JavaScript -->
+  <section id="javascript">
+    <h2>JavaScript</h2>
+
+    <p>JavaScript (JS) is a programming language that web browsers use to make web pages interactive. Where HTML builds the initial structure of a page and CSS makes it look pretty, JavaScript breathes life into that page by adding interaction between your elements - it makes your website actually do something in response to the user. Interface elements such as image slider, form validation, accordion, modal pop-up, tab, carousel, and tooltip, stuff like that and everything can, thanks to JavaScript, be made dynamic or interactive on a website without a page reload.</p>
+
+    <p>JavaScript interacts with HTML and CSS. It is capable of modifying any portion of the displayed page, as well as default text (when IDs or class names are well formed). It can also hide or show elements, and even add new elements to the page. It controls every part of the webpage by using something called the Document Object Model (DOM), which functions like a map of the webpage. JavaScript code is commonly executed within tags in an HTML file or from an external .js file. For instance, JavaScript can prompt an alert box or changes paragraph (with only a few lines of code) when you click a button.</p>
+
+    <p>JavaScript is incredibly significant for the simple fact that it transforms static web pages into dynamic and functional ones. It is used on the front-end (what users see) and on the backend for tools such as Node. js. Virtually all the websites we visit today get their style and function from JavaScript, whether it’s a cascade of smoothly collapsing menu options, or a subtle responsive nudge of change when we hover, click or touch. In other words: HTML shapes it, CSS colors it and JS deals with the interactivity.</p>
+
+    <h4>Explanation Code Example:</h4>
+    <pre>
+&lt;button onclick="changeText()"&gt;Click Here&lt;/button&gt;
+&lt;p id="demo"&gt;Hello!&lt;/p&gt;
+
+&lt;script&gt;
+function changeText() {
+  document.getElementById("demo").innerHTML = "You clicked the button!";
+}
+&lt;/script&gt;
+    </pre>
+
+    <h4>How it works:</h4>
+    <h5>HTML Structure:</h5>
+    <ul>
+      <li>• A button and a paragraph (&lt;p&gt;) are placed inside the webpage.</li>
+      <li>• The paragraph initially shows “Hello!”.</li>
+      <li>• The button has an onclick event, meaning when you click it, a JavaScript function will run.</li>
+    </ul>
+
+    <h5>JavaScript Function (changeText()):</h5>
+    <ul>
+      <li>• The function uses document.getElementById("demo") to find the paragraph with the id demo.</li>
+      <li>• Then it changes the paragraph’s text (innerHTML) to “You clicked the button!”.</li>
+    </ul>
+
+    <h5>User Interaction:</h5>
+    <ul>
+      <li>• When the user clicks the button → the function runs → the text on the page changes instantly.</li>
+    </ul>
+
+    <h4>What it demonstrates:</h4>
+    <p>This example demonstrates that what it can do is make websites seems alive. Read and scroll are all a user can do without JavaScript. Thanks to JavaScript, they can click, type, drag and interact. It allows for functionality such as forms, sliders, animation, modal pop-ups and real-time updating.</p>
+
+    <div class="code-output">
+      <button class="btn btn-success" onclick="changeText()">Click Here</button>
+      <p id="demo">Hello!</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>✅ HTML, CSS, Bootstrap</li>
+      <li>✅ JavaScript (Beginner)</li>
+      <li>✅ Problem Solving</li>
+      <li>✅ Eager to Learn New Tech</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Durga | Full Stack Development Portfolio | Designed using HTML, CSS, Bootstrap & JavaScript</p>
+  </footer>
+
+  <!-- Page JavaScript -->
+  <script>
+    function changeText() {
+      document.getElementById("demo").innerHTML = "You clicked the button!";
+    }
+  </script>
+
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
